@@ -1,0 +1,159 @@
+#nav-ribbon-up {
+  height: 36px;
+  background-color: var(--primary-blue);
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav-ribbon-up p {
+  color: #ffffff;
+  margin: 0px;
+  font-size: var(--text);
+  line-height: 1.8rem;
+}
+
+.lang-select {
+  display: flex;
+  font-size: var(--text);
+  justify-content: end;
+}
+.lang-select .language-selector {
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+
+.lang-select .language-selector option {
+  background: var(--primary-blue);
+  color: #fff;
+}
+
+/* Sign in Nav */
+#navbar-upper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+#navbar-upper p {
+  background: #ffffff;
+  font-size: 1.6rem;
+  color: var(--primary-gray);
+}
+
+#navbar-upper ul {
+  list-style-type: none;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+#navbar-upper ul li {
+  display: inline-flex;
+}
+
+#navbar-upper ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: var(--primary-gray);
+  text-decoration: none;
+}
+
+#navbar-upper ul li a img {
+  height: 2rem;
+}
+
+#navbar-upper ul li a span {
+  margin-left: 0.6rem;
+  margin-right: 1.2rem;
+}
+
+#navbar-upper .input {
+  color: var(--primary-gray);
+  font-weight: 700;
+  font-size: 16px !important;
+  /*  max-width: 400px;
+  width: 60%; */
+  width: 380px;
+  min-width: 150px;
+  padding-left: 10px;
+  background-color: var(--gray-lighter);
+  height: 44px;
+  border: 1px solid var(--gray-lighter);
+  border-radius: 25px 0px 0px 25px;
+}
+#navbar-upper .input::placeholder {
+  font-weight: 300;
+}
+
+#navbar-upper .input:focus.input::placeholder {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+#navbar-upper .input:focus {
+  outline: 1px solid #b7d432;
+  background: var(--blue-lighter);
+  color: #ffffff;
+}
+
+#navbar-upper .search-btn {
+  /*  width: 40%;
+  max-width: 140px; */
+  width: 150px;
+  min-width: 140px;
+  height: 44px;
+  padding: 10px;
+  font-size: 1.6rem;
+  background-color: #e8e9f0;
+  color: var(--primary-gray);
+  border: 1px solid #e8e9f0;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.lito-logo img {
+  width: 120px;
+  object-fit: contain;
+}
+
+#nav-ribbon-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  background-color: var(--gray-light);
+}
+.breadcrumb {
+  margin: 0px !important;
+  padding: 0px;
+}
+
+.breadcrumb li {
+  font-size: 1.6rem;
+  color: var(--primary-gray);
+}
+
+.breadcrumb li a {
+  font-size: 1.6rem;
+  color: var(--primary-gray);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: var(--primary-gray);
+}
+
+@media (max-width: 992px) {
+  .lito-logo img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar-upper ul li a img {
+    height: 2.6rem;
+    margin: 0.8rem;
+  }
+}

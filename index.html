@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chipolino</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Swiper css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/upper-nav.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/categories.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/carousel.css" />
+    <link rel="stylesheet" href="styles/newsletter.css" />
+    <link rel="stylesheet" href="styles/lower-nav.css" />
+    <link rel="stylesheet" href="styles/label.css" />
+
+    <!-- Option 1: Include in HTML -->
+  </head>
+  <body>
+    <header>
+      <!-- ribbon up-->
+      <section
+        class="d-flex justify-content-around align-items-center"
+        id="nav-ribbon-up"
+      >
+        <div class="container-xxl m-0 px-4">
+          <div class="row m-0 p-0 g-0">
+            <div class="d-flex col-0 col-lg-4 text-start">
+              <p class="d-none d-lg-inline">
+                Tηλεφωνικές Παραγγελίες:
+                <span class="fw-bold">211 102 6730</span>
+              </p>
+            </div>
+            <div class="d-flex col-8 col-lg-4 text-lg-center">
+              <p>
+                <a class="text-white" href="#"
+                  ><i class="bi bi-telephone-fill d-lg-none"></i
+                ></a>
+                &nbsp;<span class="d-none d-sm-inline"
+                  >(Δευτέρα έως Παρασκευή 09:00-18:00)</span
+                >
+              </p>
+            </div>
+            <div class="d-flex col-4 justify-content-end">
+              <!--   <p>
+               
+                <i class="bi bi-chevron-down"></i>
+              </p> -->
+
+              <nav class="lang-select">
+                <select class="language-selector">
+                  <option value="en">English</option>
+                  <option value="gr" selected>Eλληνικά</option>
+                </select>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--upper navbar -->
+      <section
+        class="d-flex shadow-sm justify-content-around align-items-center"
+        id="navbar-upper"
+      >
+        <div class="container-xxl m-0 px-4">
+          <div class="row m-0 p-0 g-0">
+            <div class="flex col-2 lito-logo">
+              <img src="./assets/images/navbar/logo.png" />
+            </div>
+            <div class="d-none d-lg-flex col-4 align-items-center">
+              <input class="input" type="text" placeholder="Ψάχνετε κάτι;" />
+              <button class="search-btn">
+                Αναζήτηση
+                <img
+                  height="16px"
+                  src="./assets/images/navbar/search-icon.svg"
+                  alt="search"
+                />
+              </button>
+            </div>
+            <div
+              class="d-flex col-10 col-lg-6 text-end align-items-center justify-content-end"
+            >
+              <div>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/navbar/gift-icon.svg"
+                        alt="gift"
+                      /><span class="d-none d-md-inline">Λίστα Δώρου</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/navbar/user-icon.svg"
+                        alt="user"
+                      /><span class="d-none d-md-inline"
+                        >Σύνδεση / Εγγραφή</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/navbar/favorites-icon.svg"
+                        alt="favorites"
+                      /><span class="d-none d-md-inline">Αγαπημένα </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="./assets/images/navbar/bag-icon.svg"
+                        alt="shop"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--lower navbar -->
+      <section id="lower-nav">
+        <div class="container-xxl px-4">
+          <div class="row">
+            <div class="col-3 col-sm-2 col-lg-12 d-flex d-row d-lg-inline">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-button-container d-lg-none" for="menu-toggle">
+                <div class="menu-button"></div>
+              </label>
+              <ul class="menu">
+                <li><a href="#">Eγκυμοσύνη</a></li>
+                <li><a href="#">Βρεφανάπτυξη</a></li>
+                <li><a href="#">Λευκά Είδη - Προίκα</a></li>
+                <li><a href="#">Δωμάτιο</a></li>
+                <li><a href="#">Βόλτα </a></li>
+                <li><a href="#">Ρουχαλάκια - Παπουτσάκια</a></li>
+                <li><a href="#">Παιχνίδι - Βιβλίο</a></li>
+                <li><a href="#">% Outlet</a></li>
+              </ul>
+            </div>
+            <div
+              class="col-9 col-sm-10 d-flex d-lg-none d-row justify-content-end align-items-center"
+            >
+              <input class="input" type="text" placeholder="Ψάχνετε κάτι;" />
+              <button class="search-btn">
+                <span class="d-none d-sm-inline">Αναζήτηση</span>
+                <img
+                  height="20px"
+                  src="./assets/images/navbar/search-icon.svg"
+                  alt="chipolino search"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ribbon down-->
+      <section id="nav-ribbon-down">
+        <div class="container-xxl m-0 px-4">
+          <div class="row">
+            <div class="col-12">
+              <ol class="breadcrumb d-lg-flex justify-content-start">
+                <li class="breadcrumb-item"><a href="#">Αρχική </a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  ChipoLino
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="mb-5 mb-lg-0" id="hero">
+        <img src="./assets/images/hero/white-wave.svg" class="img-fluid" />
+      </section>
+
+      <!-- sticky sidebar -->
+      <div class="shadow" id="label">
+        <div class="label-wrapper">
+          <div class="label-box shadow-sm">
+            <a href="#"
+              ><img
+                src="./assets/images/label/arrows.png"
+                alt="chipolino prices"
+            /></a>
+          </div>
+          <div class="label-box shadow-sm">
+            <a href="#"
+              ><img src="./assets/images/label/home.png" alt="chipolino home"
+            /></a>
+          </div>
+          <div class="label-box shadow-sm">
+            <a href="#"
+              ><img src="./assets/images/label/news.png" alt="chipolino news"
+            /></a>
+          </div>
+          <div class="label-box shadow-sm">
+            <a href="#"
+              ><img src="./assets/images/label/chat.png" alt="chipolino chat"
+            /></a>
+          </div>
+
+          <div class="label-box">
+            <a href="#"
+              ><img src="./assets/images/label/next.png" alt="chipolino links"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subhero -->
+      <section id="hero-sub">
+        <div class="container-xxl mb-5 pb-5 px-4">
+          <div class="d-flex row justify-content-center">
+            <div class="col-12 col-lg-7 mb-5 mb-lg-0 text-start">
+              <h1 class="mb-5 text-center text-lg-start">
+                Λίγα λόγια για την εταιρεία ChipoLino
+              </h1>
+              <h2 class="mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea com.
+              </h2>
+              <h2>
+                <i class="bi bi-circle-fill me-3"></i>Duis aute irure dolor in
+                reprehenderit
+              </h2>
+              <h2>
+                <i class="bi bi-circle-fill me-3"></i>In voluptate velit esse
+                cillum dolore eu
+              </h2>
+              <h2>
+                <i class="bi bi-circle-fill me-3"></i>Fugiat nulla pariatur
+              </h2>
+              <h2>
+                <i class="bi bi-circle-fill me-3"></i> Excepteur sint occaecat
+              </h2>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-5">
+              <img
+                class="img-fluid"
+                src="./assets/images/hero/chipolino.png"
+                alt="chipolino logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel -->
+      <section id="carousel">
+        <h1 class="mt-5">Best Sellers</h1>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner"></div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    src="./assets/images/carousel/trailer1.png"
+                    alt="chipolino port-bebe Joolz"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι και port-bebe Joolz Day3</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>801,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/sales.png"
+                    alt="chipolino sales banner"
+                  />
+                </div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer4.png"
+                    alt="ChipoLiNo Electra 3 trailer"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Σύστημα μεταφοράς ChipoLiNo Electra 3 in 1 Black</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2><span>1.299,00€</span>801,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner"></div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer2.png"
+                    alt="chipolino Bugaboo Donkey2"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι και port-bebe Bugaboo Donkey2 Mono Complete</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>1099,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/new.svg"
+                    alt="chipolino sales banner"
+                  />
+                </div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer3.png"
+                    alt="chipolino Urban Glide 2"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι για 2 παιδιά THULE® Urban Glide 2 Double Blue</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>801,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner"></div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer1.png"
+                    alt="chipolino port-bebe Joolz Day3"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι και port-bebe Joolz Day3</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>1099,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/sales.png"
+                    alt="chipolino sales banner"
+                  />
+                </div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer4.png"
+                    alt="chipolino ChipoLiNo Electra 3"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Σύστημα μεταφοράς ChipoLiNo Electra 3 in 1 Black</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2><span>1.299,00€</span> 1099,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner"></div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer2.png"
+                    alt="chipolino port-bebe Bugaboo Donkey2 "
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι και port-bebe Bugaboo Donkey2 Mono Complete</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2><span>1.299,00€</span> 1099,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/new.svg"
+                    alt="chipolino trailer blue"
+                  />
+                </div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer3.png"
+                    alt="chipolino THULE® Urban Glide 2"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι για 2 παιδιά THULE® Urban Glide 2 Double Blue</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>801,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+      </section>
+      <!-- Categories -->
+      <section class="mt-5" id="categories">
+        <h1 class="my-5">Επιλέξτε κατηγορία</h1>
+
+        <div class="container-xxl mb-5 px-4">
+          <div class="row g-5 d-flex align-items-center">
+            <div
+              class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center justify-content-xl-center justify-content-sm-end"
+            >
+              <div class="category-box">
+                <div class="category-img">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/categories/trailer.png"
+                    alt="chipolino trailer"
+                  />
+                </div>
+                <h2>Kαρότσια</h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center justify-content-xl-center justify-content-sm-start"
+            >
+              <div class="category-box">
+                <div class="category-img">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/categories/bag.png"
+                    alt="chipolino bag"
+                  />
+                </div>
+                <h2>Τσάντες</h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-12 col-xl-3 d-flex justify-content-center justify-content-xl-center justify-content-sm-end"
+            >
+              <div class="category-box">
+                <div class="category-img">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/categories/bed.png"
+                    alt="chipolino bed"
+                  />
+                </div>
+                <h2>Κρεβάτια</h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-xl-3 d-flex col-6 justify-content-center justify-content-xl-center justify-content-sm-start"
+            >
+              <div class="category-box">
+                <div class="category-img">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/categories/bike.png"
+                    alt="chipolino bike"
+                  />
+                </div>
+                <h2>Ποδήλατα</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5 g-5 d-flex align-items-center">
+            <div
+              class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center justify-content-xl-center justify-content-sm-end"
+            >
+              <div class="category-box">
+                <div class="category-img">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/categories/trailer.png"
+                    alt="chipolino trailer"
+                  />
+                </div>
+                <h2>Kαρότσια</h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center justify-content-xl-center justify-content-sm-start"
+            >
+              <div class="category-box">
+                <div class="category-img">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/categories/bag.png"
+                    alt="chipolino bag"
+                  />
+                </div>
+
+                <h2>Τσάντες</h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-12 col-sm-6 col-xl-3 d-flex justify-content-center justify-content-xl-center justify-content-sm-end"
+            >
+              <div class="category-box">
+                <div class="category-img">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/categories/bed.png"
+                    alt="chipolino bed"
+                  />
+                </div>
+                <h2>Κρεβάτια</h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center justify-content-xl-center justify-content-sm-start"
+            >
+              <div class="category-box">
+                <div class="category-img">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/categories/bike.png"
+                    alt="chipolino bike"
+                  />
+                </div>
+                <h2>Ποδήλατα</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5" id="carousel2">
+        <h1 class="mt-3">Προσφορές ChipoLino</h1>
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="carousel-card">
+                <img
+                  width="224px"
+                  height="283px"
+                  src="./assets/images/carousel/sale.png"
+                  alt="chipolino port-bebe Joolz"
+                />
+                <div class="sale-info">
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis! Et harum quidem rerum facilis est et
+                    expedita distinctio. Nam libero.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner"></div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer1.png"
+                    alt="chipolino port-bebe Joolz"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι και port-bebe Joolz Day3</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>801,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/sales.png"
+                    alt="chipolino sales banner"
+                  />
+                </div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer4.png"
+                    alt="ChipoLiNo Electra 3 trailer"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Σύστημα μεταφοράς ChipoLiNo Electra 3 in 1 Black</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino  price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2><span>1.299,00€</span>801,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner"></div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer2.png"
+                    alt="chipolino Bugaboo Donkey2"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι και port-bebe Bugaboo Donkey2 Mono Complete</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>1099,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/new.svg"
+                    alt="chipolino sales banner"
+                  />
+                </div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer3.png"
+                    alt="chipolino Urban Glide 2"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι για 2 παιδιά THULE® Urban Glide 2 Double Blue</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>801,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner"></div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer1.png"
+                    alt="chipolino port-bebe Joolz Day3"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι και port-bebe Joolz Day3</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>1099,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/sales.png"
+                    alt="chipolino sales banner"
+                  />
+                </div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer4.png"
+                    alt="chipolino ChipoLiNo Electra 3"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Σύστημα μεταφοράς ChipoLiNo Electra 3 in 1 Black</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2><span>1.299,00€</span> 1099,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner"></div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer2.png"
+                    alt="chipolino port-bebe Bugaboo Donkey2 "
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι και port-bebe Bugaboo Donkey2 Mono Complete</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2><span>1.299,00€</span> 1099,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="carousel-card">
+                <div class="carousel-card-banner">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/new.svg"
+                    alt="chipolino trailer blue"
+                  />
+                </div>
+
+                <div class="carousel-card-pic">
+                  <img
+                    class="img-fluid"
+                    src="./assets/images/carousel/trailer3.png"
+                    alt="chipolino THULE® Urban Glide 2"
+                  />
+                </div>
+                <div class="carousel-card-title">
+                  <p>Καρότσι για 2 παιδιά THULE® Urban Glide 2 Double Blue</p>
+                </div>
+
+                <div class="info">
+                  <div class="actions">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/heart.svg"
+                      alt="chipolino action favorite"
+                    />
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/carousel/arrows.png"
+                      alt="chipolino price range"
+                    />
+                  </div>
+                  <div class="price">
+                    <h2>801,00€</h2>
+                  </div>
+                </div>
+                <button>Προσθήκη στο καλάθι</button>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+      </section>
+
+      <!-- NewsLetter -->
+      <section class="mb-0 mb-lg-0 p-0" id="newsletter">
+        <div class="p-0 container-fluid">
+          <div class="m-0 p-0 gray-wave">
+            <img
+              class="img-fluid m-0"
+              src="./assets/images/newsletter/gray-wave.svg"
+            />
+          </div>
+          <div class="m-0 px-4 px-lg-0 blue-wave" style="background: #f3f3f7">
+            <div>
+              <img
+                class="chipolino-logo-big"
+                src="./assets/images/newsletter/logo-halo.png"
+                alt="chipolino logo"
+              />
+              <h1 class="my-5 text-center">
+                Δείτε όλα τα προϊόντα της ChipoLino
+              </h1>
+              <button>Δείτε περισσότερα</button>
+            </div>
+          </div>
+          <img
+            class="img-fluid m-0"
+            src="./assets/images/newsletter/blue-wave.svg"
+          />
+        </div>
+        <div
+          class="mb-0 px-4 px-lg-0 newsletter-info"
+          style="background: #75b4ec"
+        >
+          <img
+            class="mb-5 bell"
+            style="height: 40px"
+            src="./assets/images/newsletter/bell.svg"
+            alt="newsletter bell"
+          />
+          <h1 class="mt-0 p-0">Newsletter</h1>
+          <p class="text-center">
+            Συμπληρώστε το email για να μαθαίνετε πρώτοι για τις προσφορές & τις
+            νέες αφίξεις!
+          </p>
+          <div class="d-flex col-12 justify-content-center mb-5">
+            <input
+              class="input"
+              type="text"
+              placeholder="Εισάγετε το email σας;"
+            />
+            <button class="search-btn">
+              <img
+                height="20px"
+                src="./assets/images/newsletter/sign-in.png"
+                alt=""
+              />
+              Εγγραφή
+            </button>
+          </div>
+
+          <div class="newsletter-accept">
+            <label class="checkbox pe-3">
+              <input type="checkbox" class="checkbox-input" />
+              <span class="checkbox-inner"></span>
+            </label>
+            <p>Επιθυμώ να λαμβάνω προωθητικά e-mails από το Λητώ</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-xxl px-4 my-5">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <h1 class="mb-5">Eπικοινωνία</h1>
+            <p href="#">Κηφισού 90, Περιστέρι, 12132</p>
+            <p href="#">Τηλεφωνικό κέντρο ΛΗΤΩ</p>
+            <p href="#">info@letoshop.gr</p>
+            <p href="#">+30 210 573 9294</p>
+            <p href="#">+30 210 572 8346</p>
+            <h3 class="my-5" href="#">Τηλεφωνικό κέντρο e-shop</h3>
+            <p href="#">webmaster@letoshop.gr</p>
+            <p href="#">+30 211 102 6730</p>
+            <p href="#">Δευτ. έως Παρ. 09:00-18:00</p>
+            <div class="social-icons mt-5">
+              <div>
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </div>
+              <div class="mx-3">
+                <a href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-lg-block col-12 col-lg-3">
+            <h1 class="mb-5">Η εταιρεία</h1>
+            <a href="#"> Λίγα λόγια για τα ΛΗΤΩ </a>
+            <a href="#"> Ευκαιρίες Εργασίας </a>
+            <a href="#">Franchising </a>
+            <a href="#">Οικονομικές Kαταστάσεις</a>
+            <a href="#">Συμβουλές</a>
+            <a href="#"> Επικοινωνία</a>
+          </div>
+          <div class="d-none d-lg-block col-12 col-lg-3">
+            <h1 class="mb-5">Eshop</h1>
+            <a href="#">Κάρτα Μέλους ΛΗΤΩ </a>
+            <a href="#">Δωροεπιταγές ΛΗΤΩ </a>
+            <a href="#">Λίστα δώρου </a>
+            <a href="#">Εγγύηση χαμηλότερης τιμής</a>
+            <a href="#">Εγγύηση διαθεσιμότητας</a>
+            <a href="#">Εξυπηρέτηση μετά την πώληση</a>
+            <a href="#">Εγγύηση για όλα τα έπιπλα </a>
+            <a href="#">Έξυπνη αγορά</a>
+            <a href="#">Όροι χρήσης </a>
+            <a href="#">Τρόποι παραγγελίας & αποστολής</a>
+          </div>
+
+          <div class="d-none d-lg-block col-12 col-lg-3">
+            <h1 class="mb-5">Εxtras</h1>
+            <a href="#">Σύμβουλοι ανάπτυξης ΛΗΤΩ </a>
+            <a href="#">Η λίστα της μέλλουσας μαμάς </a>
+            <a href="#">Η λίστα του μωρού </a>
+            <a href="#">Τα πάντα για την εκδρομή στην εξοχή</a>
+            <a href="#">+30 210 572 8346</a>
+            <a href="#">Τα πάντα για τον θηλασμό </a>
+            <a href="#">Σεμινάρια θηλασμού </a>
+            <a href="#">Ποδομετρητής </a>
+            <a href="#">Μεγεθολογία </a>
+            <a href="#">Το γραμματοκιβώτιο της μαμάς</a>
+            <a href="#">Ζωγραφική παιδικού δωματίου</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- accordion -->
+      <div class="d-block d-lg-none container-xxl px-0 mb-5">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Η εταιρεία
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <a href="#"> Λίγα λόγια για τα ΛΗΤΩ </a>
+                <a href="#"> Ευκαιρίες Εργασίας </a>
+                <a href="#">Franchising </a>
+                <a href="#">Οικονομικές Kαταστάσεις</a>
+                <a href="#">Συμβουλές</a>
+                <a href="#"> Επικοινωνία</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Eshop
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <a href="#">Κάρτα Μέλους ΛΗΤΩ </a>
+                <a href="#">Δωροεπιταγές ΛΗΤΩ </a>
+                <a href="#">Λίστα δώρου </a>
+                <a href="#">Εγγύηση χαμηλότερης τιμής</a>
+                <a href="#">Εγγύηση διαθεσιμότητας</a>
+                <a href="#">Εξυπηρέτηση μετά την πώληση</a>
+                <a href="#">Εγγύηση για όλα τα έπιπλα </a>
+                <a href="#">Έξυπνη αγορά</a>
+                <a href="#">Όροι χρήσης </a>
+                <a href="#">Τρόποι παραγγελίας & αποστολής</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Extras
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <a href="#">Σύμβουλοι ανάπτυξης ΛΗΤΩ </a>
+                <a href="#">Η λίστα της μέλλουσας μαμάς </a>
+                <a href="#">Η λίστα του μωρού </a>
+                <a href="#">Τα πάντα για την εκδρομή στην εξοχή</a>
+                <a href="#">Τα πάντα για τον θηλασμό </a>
+                <a href="#">Σεμινάρια θηλασμού </a>
+                <a href="#">Ποδομετρητής </a>
+                <a href="#">Μεγεθολογία </a>
+                <a href="#">Το γραμματοκιβώτιο της μαμάς</a>
+                <a href="#">Ζωγραφική παιδικού δωματίου</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-ribbon -->
+      <section class="mt-5 mb-0" id="footer-ribbon">
+        <div class="container-xxl px-4">
+          <div class="content">
+            <div>
+              <p>
+                Copyright © 2020 ΛΗΤΩ Βρεφικά Πολυκαταστήματα. Designed by
+                Sleed.
+              </p>
+            </div>
+
+            <div class="sponsors">
+              <div>
+                <img
+                  class="img-fluid"
+                  src="./assets/images/footer/visa.png"
+                  alt="chipolino sponsor visa"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-fluid"
+                  src="./assets/images/footer/mastercard.png"
+                  alt="chipolino sponsor mastercard"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-fluid"
+                  src="./assets/images/footer/paypal.png"
+                  alt="chipolino sponsor paypal"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-fluid"
+                  src="./assets/images/footer/eurobank.png"
+                  alt="chipolino sponsor eurobank"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiperOptions = {
+        // Optional parameters
+        direction: "horizontal",
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          319: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          680: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+
+          991: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+          },
+          // when window width is >= 1280px
+          1319: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+        },
+      };
+
+      const swiper = new Swiper(".swiper", swiperOptions);
+    </script>
+  </body>
+</html>

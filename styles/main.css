@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --text: 1.6rem;
+  --primary-gray: #868dad;
+  --gray-light: #e1e4e9;
+  --gray-lighter: #f3f3f7;
+  --primary-blue: #4b8fcc;
+  --secondary-blue: #75b4ec;
+  --blue-lighter: #8dc4f3;
+  --primary-green: #85be84;
+  --font-regular: "PF Bague Sans Pro Regular", Calibri, "Trebuchet MS",
+    sans-serif;
+  --font-thin: "PF Bague Sans Pro Thin", Calibri, "Trebuchet MS", sans-serif;
+  --font-bold: "PF Bague Sans Pro Bold", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: "PF Bague Sans Pro Regular";
+  src: url("../assets/fonts/PFBagueSansPro-Medium.ttf");
+}
+
+@font-face {
+  font-family: "PF Bague Sans Pro Bold";
+  src: url("../assets/fonts/PFBagueSansPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "PF Bague Sans Pro Thin";
+  src: url("../assets/fonts/PFBagueSansPro-Light.ttf");
+}
+
+/* Typography */
+p {
+  line-height: 1.8rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: var(--primary-gray);
+  font-family: var(--font-bold);
+}
+
+h2 {
+  font-size: 2.3rem;
+  color: var(--primary-gray);
+  font-family: var(--font-thin);
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: var(--font-bold);
+  color: #ffffff;
+}
+
+dl,
+ol,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--text);
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
