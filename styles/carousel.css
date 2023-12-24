@@ -99,12 +99,12 @@ button-prev:after,
 
 .carousel-card-pic img {
   max-height: 190px;
+  object-fit: contain;
 }
 
 .carousel-card-pic {
   display: flex;
   justify-content: center;
-  object-fit: contain;
   margin-bottom: 10px;
 }
 
